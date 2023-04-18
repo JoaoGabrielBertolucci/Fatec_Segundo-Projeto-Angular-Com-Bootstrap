@@ -13,9 +13,14 @@ export class ConsumoComponent {
   item4: any;
   item5: any;
 
+   qtd1!: number;
+   qtd2!: number;
+   qtd3!: number;
+   qtd4!: number;
+
+   resultCalc!: number;
+
   teste(){
-   
-    
     this.item1 = <HTMLInputElement> document.getElementById("check1");
     this.item2 = <HTMLInputElement> document.getElementById("check2");
     this.item3 = <HTMLInputElement> document.getElementById("check3");
