@@ -3,75 +3,88 @@
     <h3>Calculo De Consumo Energético</h3>
 </div>
     
-<table class="table text-center">
+<table class="table text-center" id="table">
     <thead>
       <tr>
-        
+        <td>quantas pessoas moram na sua casa?
+
+          <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping"></span>
+              <input type="text" 
+              class="form-control" 
+              placeholder="quantidade" 
+              aria-label="Username" 
+              aria-describedby="addon-wrapping"
+              width="50px"
+              [(ngModel)] = "pessoas">
+            </div>
+
+      </td>
       </tr>
     </thead>
     
     <tbody>
-      <tr>
-        <td>quantas pessoas moram na sua casa?</td>
-        
-        <td>
-            <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" 
-                class="form-control" 
-                placeholder="quantidade" 
-                aria-label="Username" 
-                aria-describedby="addon-wrapping"
-                width="50px">
-              </div>
-
-        </td>
-      </tr>
-      
 
     <tr>       
-        <td>quais desses eletrodomesticos</td>
-        <td> 
-            <div class="form-check">
-                       
-                <input      
-                class="form-check-input" 
-                type="checkbox" value="" 
-                id="flexCheckIndeterminate">
+      <td>
+        quais desses eletrodomesticos você possui?
 
-                <label 
-                class="form-check-label" 
-                for="flexCheckIndeterminate">
-                Máquina De lavar
-                </label>     
-            </div>
 
-            <div class="form-check">
-                       
-                <input      
-                class="form-check-input" 
-                type="checkbox" value="" 
-                id="flexCheckIndeterminate">
+        <div class="form-check">       
 
-                <label 
-                class="form-check-label" 
-                for="flexCheckIndeterminate">
-                Secardora de Roupas
-                </label>     
-            </div>
+            <label 
+            class="form-check-label" 
+            for="flexCheckIndeterminate">
+            Máquina De lavar
 
-            <div class="form-check">
-                       
-           ...
-            </div>
+              <input      
+              class="form-check-input" 
+              type="checkbox" value="" 
+              id="check1">
 
-         </td>
+            </label>     
+        </div>
+
+        <div class="form-check">
+
+            <label
+            
+            class="form-check-label" 
+            for="flexCheckIndeterminate">
+            Secardora de Roupas
+
+              <input      
+              class="form-check-input" 
+              type="checkbox" value="" 
+              id="check2">
+
+            </label>     
+        </div>
+
+        <div class="form-check">
+                   
+            <label 
+            class="form-check-label" 
+            for="flexCheckIndeterminate">
+            Secardora de Roupas
+
+              <input      
+              class="form-check-input" 
+              type="checkbox" value="" 
+              id="check3">
+
+            </label>
+          
+        </div>
+
+      </td>
     </tr>
-      
 
-      <tr>
-     
-      </tr>
+    <tr>
+      <td>
+        <button (click)="teste()"> Calculo</button>
+      </td>
+    </tr>
 
     </tbody>
   
