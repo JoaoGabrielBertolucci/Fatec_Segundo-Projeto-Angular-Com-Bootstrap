@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./consumo.component.css']
 })
 export class ConsumoComponent {
-  pessoas!: Number;
+  pessoas: Number | undefined;
   item1: any;
   item2: any;
   item3: any;
 
   teste(){
+   
+    
     this.item1 = <HTMLInputElement> document.getElementById("check1");
     this.item2 = <HTMLInputElement> document.getElementById("check2");
     this.item3 = <HTMLInputElement> document.getElementById("check3");

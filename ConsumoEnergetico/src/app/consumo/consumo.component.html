@@ -6,14 +6,26 @@
 <table class="table text-center" id="table">
     <thead>
       <tr>
-        <td>quantas pessoas moram na sua casa?
+        <td>
+          quantas pessoas moram na sua casa?
 
           <div class="input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"></span>
               <input type="text" 
               class="form-control" 
-              placeholder="quantidade" 
-              aria-label="Username" 
+              placeholder="quantidade"  
+              aria-describedby="addon-wrapping"
+              width="50px"
+              [(ngModel)] = "pessoas">
+            </div>
+
+            quantos cômodos existem na sua casa?
+
+          <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping"></span>
+              <input type="text" 
+              class="form-control" 
+              placeholder="quantidade"  
               aria-describedby="addon-wrapping"
               width="50px"
               [(ngModel)] = "pessoas">
@@ -66,7 +78,7 @@
             <label 
             class="form-check-label" 
             for="flexCheckIndeterminate">
-            Secardora de Roupas
+            TV´S
 
               <input      
               class="form-check-input" 
@@ -77,7 +89,28 @@
           
         </div>
 
+        <div class="form-check">
+                   
+          <label 
+          class="form-check-label" 
+          for="flexCheckIndeterminate">
+          Computado
+
+            <input      
+            class="form-check-input" 
+            type="checkbox" value="" 
+            id="check3">
+
+          </label>
+        
+      </div>
+
       </td>
+
+      <td>
+
+      </td>
+
     </tr>
 
     <tr>
