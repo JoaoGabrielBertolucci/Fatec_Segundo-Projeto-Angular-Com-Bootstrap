@@ -6,19 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./consumo.component.css']
 })
 export class ConsumoComponent {
-  pessoas: Number | undefined;
+  pessoas!: number;
   item1: any;
   item2: any;
   item3: any;
   item4: any;
   item5: any;
 
-   qtd1!: number;
-   qtd2!: number;
-   qtd3!: number;
-   qtd4!: number;
+  valHora!: number;
 
-   resultCalc!: number;
+  qtd1!: number;
+  qtd2!: number;
+  qtd3!: number;
+  qtd4!: number;
+
+  resultCalc!: number;
 
   teste(){
     this.item1 = <HTMLInputElement> document.getElementById("check1");
@@ -28,24 +30,20 @@ export class ConsumoComponent {
     this.item5 = <HTMLInputElement> document.getElementById("check5");
 
     if (this.item1.checked) {
-      this.pessoas = 1;
+      this.resultCalc = this.qtd1 * (this.valHora * this.pessoas)
     }
 
     if (this.item2.checked) {
-        this.pessoas = 2;
+      this.resultCalc = this.qtd2 * (this.valHora * this.pessoas)
     }
 
      if (this.item3.checked) {
-        this.pessoas = 3;
+      this.resultCalc = this.qtd3 * (this.valHora * this.pessoas)
     }
 
     if (this.item4.checked) {
-      this.pessoas = 4;
-  }
-
-   if (this.item4.checked) {
-      this.pessoas = 4;
-  }
+      this.resultCalc = this.qtd4 * (this.valHora * this.pessoas)
+    }
 
   }
 }

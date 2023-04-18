@@ -27,8 +27,7 @@
               class="form-control" 
               placeholder="quantidade"  
               aria-describedby="addon-wrapping"
-              width="50px"
-              [(ngModel)] = "pessoas">
+              width="50px" readonly>
             </div>
 
         </td>
@@ -53,7 +52,10 @@
               type="checkbox" value="" 
               id="check1"><br>
 
-              quantidade <input type="text" id = "q1" [(ngModel)] = "qtd1"><br>
+              quantidade <input 
+              type="text" 
+              id = "q1" 
+              [(ngModel)] = "qtd1"><br>
 
             </label>     
         </div>
@@ -71,7 +73,10 @@
               type="checkbox" value="" 
               id="check2"><br>
 
-              quantidade <input type="text" id = "q2" [(ngModel)] = "qtd2"><br>
+              quantidade <input 
+              type="text" 
+              id = "q2" 
+              [(ngModel)] = "qtd2"><br>
 
             </label>     
         </div>
@@ -81,14 +86,17 @@
             <label 
             class="form-check-label" 
             for="flexCheckIndeterminate">
-            TV´S <!-- 20 kw * 4 h -->
+            TV´S <!-- 20 kw * h -->
 
               <input      
               class="form-check-input" 
               type="checkbox" value="" 
               id="check3"><br>
 
-              quantidade <input type="text" id = "q3" [(ngModel)] = "qtd3"><br>
+              quantidade <input 
+              type="text" 
+              id = "q3" 
+              [(ngModel)] = "qtd3"><br>
 
             </label>
           
@@ -99,14 +107,16 @@
           <label 
           class="form-check-label" 
           for="flexCheckIndeterminate">
-          Computador <!-- 5 kw * 4 h -->
+          Computador <!-- 5 kw * h -->
 
             <input      
             class="form-check-input" 
             type="checkbox" value="" 
             id="check4"><br>
 
-            quantidade <input type="text" id = "q4" [(ngModel)] = "qtd4"><br>
+            quantidade <input 
+            type="text" id = "q4" 
+            [(ngModel)] = "qtd4"><br>
             
           </label>
         </div>
@@ -115,8 +125,21 @@
 
     <tr>
       <td>
-        <button (click)="teste()" id="btncalcular"> Calcular</button>
-        <input type="text" id = "q4" [(ngModel)] = "resultCalc"><br>
+        <button (click)="teste()" id="btncalcular"> Calcular</button><br>
+        
+        <input 
+        type="text" 
+        id = "q4" 
+        placeholder="Horas de uso"  
+        [(ngModel)] = "valHora">
+
+        <input 
+        type="text" 
+        id = "q4" 
+        placeholder="Resultado"  
+        [(ngModel)] = "resultCalc" 
+        readonly>
+
       </td>
     </tr>
 
