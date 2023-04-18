@@ -10,6 +10,8 @@ export class ConsumoComponent {
   item1: any;
   item2: any;
   item3: any;
+  item4: any;
+  item5: any;
 
   teste(){
    
@@ -17,6 +19,8 @@ export class ConsumoComponent {
     this.item1 = <HTMLInputElement> document.getElementById("check1");
     this.item2 = <HTMLInputElement> document.getElementById("check2");
     this.item3 = <HTMLInputElement> document.getElementById("check3");
+    this.item4 = <HTMLInputElement> document.getElementById("check4");
+    this.item5 = <HTMLInputElement> document.getElementById("check5");
 
     if (this.item1.checked) {
       this.pessoas = 1;
@@ -29,6 +33,15 @@ export class ConsumoComponent {
      if (this.item3.checked) {
         this.pessoas = 3;
     }
+
+    if (this.item4.checked) {
+      this.pessoas = 4;
+  }
+
+   if (this.item4.checked) {
+      this.pessoas = 4;
+  }
+
   }
 }
 
